@@ -65,3 +65,14 @@ button:hover {
     padding: 1rem;
     border-radius: 5px;
 }
+/* Estilos generales */
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    /* Modifica los estilos para que se vean bien en dispositivos móviles */
+    body {
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+
+    /* Modifica otros estilos según sea necesario */
+}
