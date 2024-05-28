@@ -1,10 +1,9 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f3f0f7;
     color: #333;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Evita la barra de desplazamiento horizontal en dispositivos móviles */
 }
 
 header {
@@ -42,7 +41,6 @@ input[type="text"] {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 0.5rem;
-    width: 100%; /* Ocupa todo el ancho disponible */
 }
 
 button {
@@ -65,14 +63,7 @@ button:hover {
     padding: 1rem;
     border-radius: 5px;
 }
-/* Estilos generales */
 
-/* Estilos para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    /* Modifica los estilos para que se vean bien en dispositivos móviles */
-    body {
-        font-size: 14px; /* Tamaño de fuente más pequeño */
-    }
 
     /* Modifica otros estilos según sea necesario */
 }
