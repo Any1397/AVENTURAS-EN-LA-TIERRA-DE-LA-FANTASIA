@@ -31,87 +31,76 @@ async function obtenerDatos(coleccion) {
     const datos = {
         personajes: [
             {
-                Nombre: Aventurero
-Historia: Un valiente guerrero en busca de aventuras y
-tesoros.
-Habilidades especiales: Golpe de Espada y Defensa Mágica
-Velocidad movimiento: Normal
-
+                nombre: "Aventurero",
+                historia: "Un valiente guerrero en busca de aventuras y tesoros.",
+                habilidades_especiales: ["Golpe de Espada", "Defensa Mágica"],
+                velocidad_movimiento: "Normal"
             },
             {
-                Nombre: Mago
-historia: Un poderoso mago en busca de conocimiento y
-poder.
-Habilidades especiales: Bola de Fuego y Escudo de Energía
-Velocidad de movimiento: Lento
-
+                nombre: "Mago",
+                historia: "Un poderoso mago en busca de conocimiento y poder.",
+                habilidades_especiales: ["Bola de Fuego", "Escudo de Energía"],
+                velocidad_movimiento: "Lento"
+            }
         ],
         enemigos: [
             {
-                Nombre: Esqueleto
-Nivel o dificultad: Fácil
-Tipo de ataque: Golpe con Huesos
-
+                nombre: "Esqueleto",
+                nivel_dificultad: "Fácil",
+                tipo_ataque: "Golpe con Huesos"
             },
             {
-                nombre: Orco
-nivel o dificultad: Medio
-tipo de ataque: Golpe de Garrote
-
+                nombre: "Orco",
+                nivel_dificultad: "Medio",
+                tipo_ataque: "Golpe de Garrote"
             }
         ],
         objetos: [
             {
-                Nombre: Espada
-Tipo: Arma
-Rareza: Común
-Efecto especial: Incrementa el ataque en 10 puntos
-
+                nombre: "Espada",
+                tipo: "Arma",
+                rareza: "Común",
+                efecto_especial: "Incrementa el ataque en 10 puntos"
             },
             {
-                Nombre: Poción de Salud
-Tipo: Consumible
-Rareza: Común
-Efecto especial: Recupera 20 puntos de vida
-
+                nombre: "Poción de Salud",
+                tipo: "Consumible",
+                rareza: "Común",
+                efecto_especial: "Recupera 20 puntos de vida"
             }
         ],
         escenarios: [
             {
-                Nombre: Bosque Encantado
-Descripción: Un bosque mágico lleno de criaturas místicas.
-Nivel recomendado: 1
-Enemigos presentes: Duendes y Hadas
-
+                nombre: "Bosque Encantado",
+                descripcion: "Un bosque mágico lleno de criaturas místicas.",
+                nivel_recomendado: 1,
+                enemigos_presentes: ["Duendes", "Hadas"]
             },
             {
-                Nombre: Montañas Heladas
-Descripción: Unas montañas cubiertas de nieve y hielo
-Nivel recomendado: 2
-Enemigos presentes: Yetis y Lobos de Hielo
-
+                nombre: "Montañas Heladas",
+                descripcion: "Unas montañas cubiertas de nieve y hielo.",
+                nivel_recomendado: 2,
+                enemigos_presentes: ["Yetis", "Lobos de Hielo"]
             }
         ],
         usuarios: [
             {
-               Nombre: Jugador 1
-edad: 25
-Nivel actual: 1
-Monedas: 100
-Puntos vida: 100
-Registro de compras: Espada y Poción de Salud
-Inventario: Espada y Poción de Salud
-
+                nombre: "Jugador1",
+                edad: 25,
+                nivel_actual: 1,
+                monedas: 100,
+                puntos_vida: 100,
+                registro_compras: ["Espada", "Poción de Salud"],
+                inventario: ["Espada", "Poción de Salud"]
             },
             {
-                Nombre: Jugador 2
-edad: 30
-Nivel actual: 2
-Monedas: 150
-Puntos vida: 80
-Registro de compras: Espada
-Inventario: Espada
-
+                nombre: "Jugador2",
+                edad: 30,
+                nivel_actual: 2,
+                monedas: 150,
+                puntos_vida: 80,
+                registro_compras: ["Espada"],
+                inventario: ["Espada"]
             }
         ]
     };
