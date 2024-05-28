@@ -7,13 +7,13 @@ async function consultar() {
     try {
         const resultado = await obtenerDatos(coleccion);
 
-        // Filtrar los resultados seg鷑 la b鷖queda
+        // Filtrar los resultados seg煤n la b煤squeda
         const resultadoFiltrado = resultado.filter(item =>
             item.nombre.toLowerCase().includes(busqueda)
         );
 
         // Mostrar resultado
-        resultadoDiv.innerHTML = `<h3>Resultados de la colecci髇: ${coleccion}</h3>`;
+        resultadoDiv.innerHTML = `<h3>Resultados de la colecci贸n: ${coleccion}</h3>`;
         if (resultadoFiltrado.length > 0) {
             resultadoFiltrado.forEach(item => {
                 resultadoDiv.innerHTML += `<pre>${JSON.stringify(item, null, 2)}</pre>`;
@@ -26,81 +26,92 @@ async function consultar() {
     }
 }
 
-// Funci髇 simulada para obtener datos
+// Funci贸n simulada para obtener datos
 async function obtenerDatos(coleccion) {
     const datos = {
         personajes: [
             {
-                nombre: "Aventurero",
-                historia: "Un valiente guerrero en busca de aventuras y tesoros.",
-                habilidades_especiales: ["Golpe de Espada", "Defensa M醙ica"],
-                velocidad_movimiento: "Normal"
+                Nombre: Aventurero
+Historia: Un valiente guerrero en busca de aventuras y
+tesoros.
+Habilidades especiales: Golpe de Espada y Defensa M谩gica
+Velocidad movimiento: Normal
+
             },
             {
-                nombre: "Mago",
-                historia: "Un poderoso mago en busca de conocimiento y poder.",
-                habilidades_especiales: ["Bola de Fuego", "Escudo de Energ韆"],
-                velocidad_movimiento: "Lento"
-            }
+                Nombre: Mago
+historia: Un poderoso mago en busca de conocimiento y
+poder.
+Habilidades especiales: Bola de Fuego y Escudo de Energ铆a
+Velocidad de movimiento: Lento
+
         ],
         enemigos: [
             {
-                nombre: "Esqueleto",
-                nivel_dificultad: "F醕il",
-                tipo_ataque: "Golpe con Huesos"
+                Nombre: Esqueleto
+Nivel o dificultad: F谩cil
+Tipo de ataque: Golpe con Huesos
+
             },
             {
-                nombre: "Orco",
-                nivel_dificultad: "Medio",
-                tipo_ataque: "Golpe de Garrote"
+                nombre: Orco
+nivel o dificultad: Medio
+tipo de ataque: Golpe de Garrote
+
             }
         ],
         objetos: [
             {
-                nombre: "Espada",
-                tipo: "Arma",
-                rareza: "Com鷑",
-                efecto_especial: "Incrementa el ataque en 10 puntos"
+                Nombre: Espada
+Tipo: Arma
+Rareza: Com煤n
+Efecto especial: Incrementa el ataque en 10 puntos
+
             },
             {
-                nombre: "Poci髇 de Salud",
-                tipo: "Consumible",
-                rareza: "Com鷑",
-                efecto_especial: "Recupera 20 puntos de vida"
+                Nombre: Poci贸n de Salud
+Tipo: Consumible
+Rareza: Com煤n
+Efecto especial: Recupera 20 puntos de vida
+
             }
         ],
         escenarios: [
             {
-                nombre: "Bosque Encantado",
-                descripcion: "Un bosque m醙ico lleno de criaturas m韘ticas.",
-                nivel_recomendado: 1,
-                enemigos_presentes: ["Duendes", "Hadas"]
+                Nombre: Bosque Encantado
+Descripci贸n: Un bosque m谩gico lleno de criaturas m铆sticas.
+Nivel recomendado: 1
+Enemigos presentes: Duendes y Hadas
+
             },
             {
-                nombre: "Monta馻s Heladas",
-                descripcion: "Unas monta馻s cubiertas de nieve y hielo.",
-                nivel_recomendado: 2,
-                enemigos_presentes: ["Yetis", "Lobos de Hielo"]
+                Nombre: Monta帽as Heladas
+Descripci贸n: Unas monta帽as cubiertas de nieve y hielo
+Nivel recomendado: 2
+Enemigos presentes: Yetis y Lobos de Hielo
+
             }
         ],
         usuarios: [
             {
-                nombre: "Jugador1",
-                edad: 25,
-                nivel_actual: 1,
-                monedas: 100,
-                puntos_vida: 100,
-                registro_compras: ["Espada", "Poci髇 de Salud"],
-                inventario: ["Espada", "Poci髇 de Salud"]
+               Nombre: Jugador 1
+edad: 25
+Nivel actual: 1
+Monedas: 100
+Puntos vida: 100
+Registro de compras: Espada y Poci贸n de Salud
+Inventario: Espada y Poci贸n de Salud
+
             },
             {
-                nombre: "Jugador2",
-                edad: 30,
-                nivel_actual: 2,
-                monedas: 150,
-                puntos_vida: 80,
-                registro_compras: ["Espada"],
-                inventario: ["Espada"]
+                Nombre: Jugador 2
+edad: 30
+Nivel actual: 2
+Monedas: 150
+Puntos vida: 80
+Registro de compras: Espada
+Inventario: Espada
+
             }
         ]
     };
