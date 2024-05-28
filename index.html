@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventuras en la Tierra de la Fantasía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Aventuras en la Tierra de la Fantasía</h1>
+    </header>
+    <main>
+        <section id="consultas">
+            <h2>Consultas</h2>
+            <div class="consulta">
+                <label for="coleccion">Selecciona una colección:</label>
+                <select id="coleccion">
+                    <option value="personajes">Personajes</option>
+                    <option value="enemigos">Enemigos</option>
+                    <option value="objetos">Objetos</option>
+                    <option value="escenarios">Escenarios</option>
+                    <option value="usuarios">Usuarios</option>
+                </select>
+                <input type="text" id="busqueda" placeholder="Buscar por nombre...">
+                <button onclick="consultar()">Consultar</button>
+            </div>
+            <div id="resultado"></div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
